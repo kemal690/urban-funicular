@@ -1,0 +1,49 @@
+﻿@page
+@model Database_and_web_assignment.Pages.Teacher.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Teachers</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Teachers.Teacher_First_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Teachers.Teacher_First_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Teachers.Teacher_Last_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Teachers.Teacher_Last_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Teachers.Teacher_Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Teachers.Teacher_Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Teachers.Teacher_Mobile_Number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Teachers.Teacher_Mobile_Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Teachers.Teacher_Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Teachers.Teacher_Address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Teachers.Teacher_ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

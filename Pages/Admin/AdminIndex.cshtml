@@ -1,0 +1,22 @@
+﻿@page
+@model Database_and_web_assignment.Pages.Admin.AdminIndexModel
+@{
+}
+
+<h1>:: Admin PAGE ::</h1>
+<br />
+<h2>Welcome to the Admin Page</h2>
+
+<p><a asp-page="/Login/Create">Create User</a></p>
+<br />
+<p><a asp-page="/Teacher/Create">Create Teacher</a></p>
+<br />
+<p><a asp-page="/Student/Create">Create Student</a></p>
+<br />
+<p><a asp-page="/Venue/Create">Create Venue</a></p>
+<br />
+<p><a asp-page="Login/Sort">Sorting Data Example</a></p>
+<br />
+<input type="file" id="myFile" name="filename">
+<input type="submit">
+<p><a asp-page="/LogoutPage/Logout">Logout</a></p>
